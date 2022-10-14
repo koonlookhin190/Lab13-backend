@@ -12,8 +12,6 @@ import se331.rest.security.entity.JwtUser;
 import javax.crypto.spec.SecretKeySpec;
 import java.io.Serializable;
 import java.security.Key;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;

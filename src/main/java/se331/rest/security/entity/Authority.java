@@ -1,14 +1,11 @@
 package se331.rest.security.entity;
 
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-
 import java.util.List;
 
 @Entity
@@ -16,7 +13,6 @@ import java.util.List;
 @Data
 @Builder
 @AllArgsConstructor
-@NoArgsConstructor
 public class Authority {
 
     @Id
@@ -27,4 +23,9 @@ public class Authority {
     private AuthorityName name;
     @ManyToMany(mappedBy = "authorities", fetch = FetchType.LAZY)
     private List<User> users;
+
+    public Authority() {
+
+    }
+
 }
